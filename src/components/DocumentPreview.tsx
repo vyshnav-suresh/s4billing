@@ -90,19 +90,6 @@ export const DocumentPreview = forwardRef<HTMLDivElement, DocumentPreviewProps>(
             {doc.customer.phone && `Phone: ${doc.customer.phone}`}
           </p>
         </div>
-        <div className="text-right">
-          <h3 
-            className="text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-2 sm:mb-4" 
-            style={{ color: blue }}
-          >
-            Payment Details
-          </h3>
-          <p className="text-[10px] sm:text-sm" style={{ color: '#64748b' }}>
-            UPI: s4sports@okaxis<br />
-            A/C: 9182371283712<br />
-            IFSC: UTIB001234
-          </p>
-        </div>
       </div>
 
       {/* Table */}
