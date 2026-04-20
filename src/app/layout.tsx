@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins, Bangers } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
@@ -16,6 +16,13 @@ const bangers = Bangers({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: "S4 Billing | Professional Billing System",
